@@ -117,6 +117,32 @@ body::after {
   mix-blend-mode: multiply;
 }
 
+/* ===== Container (used by blog detail page) ===== */
+.container {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.container--narrow {
+  max-width: 1350px;
+}
+@media (max-width: 720px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    padding: 0 12px;
+  }
+}
+
 /* ===== Typography helpers ===== */
 .eyebrow {
   display: inline-flex;

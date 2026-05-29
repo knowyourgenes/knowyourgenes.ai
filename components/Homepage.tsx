@@ -130,7 +130,7 @@ export default function Homepage({ posts, featuredPost, initialCategory = "All" 
   return (
     <>
       {/* HERO */}
-      <section className="relative flex min-h-svh flex-col items-center justify-center px-3 pt-[80px] pb-10 text-center sm:px-4 sm:pt-[90px] md:px-5 lg:px-8 lg:pt-[100px]">
+      <section className="relative flex min-h-svh flex-col items-center justify-center px-3 pt-[80px] pb-10 text-center sm:px-4 sm:pt-[90px] md:px-5 lg:px-8 lg:pt-[100px] mt-10">
         <div className="mx-auto flex w-full max-w-[1350px] flex-col items-center gap-10">
           <h1
             className="reveal mx-auto max-w-[1100px] text-[clamp(34px,10vw,56px)] font-medium leading-[1.02] tracking-[-0.032em] text-(--ink-1) [&_em]:not-italic [&_em]:font-semibold lg:text-[clamp(48px,7.2vw,104px)] lg:leading-[0.96]"
