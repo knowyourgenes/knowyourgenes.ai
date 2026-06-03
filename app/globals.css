@@ -38,7 +38,7 @@
   /* Easing */
   --e-out: cubic-bezier(0.22, 1, 0.36, 1);
 
-  /* Typography — wired to next/font CSS variables, with sensible fallbacks */
+  /* Typography - wired to next/font CSS variables, with sensible fallbacks */
   --ff: var(--font-figtree), "Figtree", system-ui, sans-serif;
   --ff-hind: var(--font-hind), "Hind", var(--font-figtree), "Figtree", sans-serif;
 }
@@ -80,7 +80,7 @@ button {
   color: inherit;
 }
 
-/* ===== Animated mesh background — shared brand language ===== */
+/* ===== Animated mesh background - shared brand language ===== */
 body::before {
   content: "";
   position: fixed;
@@ -226,7 +226,7 @@ p {
 }
 
 /* ============================================================
-   HERO — scroll-line keyframes only (layout in Tailwind)
+   HERO - scroll-line keyframes only (layout in Tailwind)
    ============================================================ */
 @keyframes scrollLine {
   0% {
@@ -253,7 +253,7 @@ p {
 /* ============================================================
    FILTER BAR
    ============================================================ */
-/* Category filter chip — used inside the filter bar (Tailwind inline) */
+/* Category filter chip - used inside the filter bar (Tailwind inline) */
 .chip {
   display: inline-flex;
   align-items: center;
@@ -284,7 +284,7 @@ p {
 
 
 /* ============================================================
-   NEWSLETTER STRIP — keyframes only (layout in Tailwind)
+   NEWSLETTER STRIP - keyframes only (layout in Tailwind)
    ============================================================ */
 @keyframes nlDrift {
   0% {
@@ -299,7 +299,7 @@ p {
 }
 
 /* ============================================================
-   REVEAL ANIMATIONS — driven by RevealObserver IntersectionObserver
+   REVEAL ANIMATIONS - driven by RevealObserver IntersectionObserver
    ============================================================ */
 .reveal,
 .reveal-r {
@@ -471,7 +471,7 @@ p {
   background: linear-gradient(140deg, #f5eddf 0%, #f3d5b2 60%, #d9c7aa 100%);
 }
 
-/* Body + TOC grid — wide body fills the 1350px container, TOC sticks on the right.
+/* Body + TOC grid - wide body fills the 1350px container, TOC sticks on the right.
    Stacks vertically on smaller screens. */
 .post__body-wrap {
   display: grid;
@@ -489,7 +489,7 @@ p {
   }
 }
 
-/* Body prose — fills its grid cell up to the full 1350px container width. */
+/* Body prose - fills its grid cell up to the full 1350px container width. */
 .post__body {
   font-family: var(--ff-hind);
   font-size: 18px;

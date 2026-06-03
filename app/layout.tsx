@@ -21,7 +21,7 @@ const hind = Hind({
 export const metadata: Metadata = {
   title: "knowyourgenes.ai · Health Decoded · Genomic wellness journal",
   description:
-    "The official genomic wellness journal of knowyourgenes.ai — bite-sized, science-grounded reads on how your DNA shapes nutrition, fitness, recovery, and preventive care. Written for Indian biology.",
+    "The official genomic wellness journal of knowyourgenes.ai - bite-sized, science-grounded reads on how your DNA shapes nutrition, fitness, recovery, and preventive care. Written for Indian biology.",
   icons: {
     icon: "/favicon.png",
   },

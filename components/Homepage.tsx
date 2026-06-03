@@ -131,7 +131,7 @@ export default function Homepage({ posts, featuredPost, initialCategory = "All" 
     <>
       {/* HERO */}
       <section className="relative flex min-h-svh flex-col items-center justify-center px-3 pt-[80px] pb-10 text-center sm:px-4 sm:pt-[90px] md:px-5 lg:px-8 lg:pt-[100px] mt-10">
-        <div className="mx-auto flex w-full max-w-[1350px] flex-col items-center gap-10">
+        <div className="mx-auto flex w-full max-w-page flex-col items-center gap-10">
           <h1
             className="reveal mx-auto max-w-[1100px] text-[clamp(34px,10vw,56px)] font-medium leading-[1.02] tracking-[-0.032em] text-(--ink-1) [&_em]:not-italic [&_em]:font-semibold lg:text-[clamp(48px,7.2vw,104px)] lg:leading-[0.96]"
             style={{ "--rd": ".1s" } as CssVars}
@@ -166,7 +166,7 @@ export default function Homepage({ posts, featuredPost, initialCategory = "All" 
       {/* FEATURED POST */}
       {featuredPost && !isFiltered ? (
         <section className="pb-14 sm:pb-16 lg:pb-[90px]">
-          <div className="mx-auto w-full max-w-[1350px] px-3 sm:px-4 md:px-5 lg:px-8">
+          <div className="mx-auto w-full max-w-page px-3 sm:px-4 md:px-5 lg:px-8">
             <Link
               href={`/blog/${featuredPost.slug}`}
               className="reveal group relative grid grid-cols-1 overflow-hidden rounded-[var(--r-lg)] border border-(--ink-line) bg-white shadow-[var(--sh-2)] transition-all duration-500 ease-(--e-out) hover:-translate-y-1 hover:shadow-[var(--sh-3)] sm:rounded-[var(--r-xl)] lg:grid-cols-[1.05fr_1fr] lg:rounded-[var(--r-2xl)]"
@@ -232,7 +232,7 @@ export default function Homepage({ posts, featuredPost, initialCategory = "All" 
 
       {posts.length === 0 ? (
         <section className="pb-15 lg:pb-25">
-          <div className="mx-auto w-full max-w-[1350px] px-3 sm:px-4 md:px-5 lg:px-8">
+          <div className="mx-auto w-full max-w-page px-3 sm:px-4 md:px-5 lg:px-8">
             <div className="reveal mb-6 flex items-end justify-between gap-5">
               <h2 className="text-[clamp(28px,3.4vw,44px)] font-medium leading-[1.05] tracking-[-0.022em]">
                 Latest from the journal
@@ -272,7 +272,7 @@ export default function Homepage({ posts, featuredPost, initialCategory = "All" 
               filterHidden ? "translate-y-full opacity-0" : "translate-y-0 opacity-100"
             }`}
           >
-            <div className="mx-auto w-full lg:max-w-[1350px] lg:px-8">
+            <div className="mx-auto w-full lg:max-w-page lg:px-8">
               <div className="pointer-events-auto flex w-full flex-row flex-nowrap items-center gap-2.5 border-t border-[rgba(31,26,20,0.08)] bg-[rgba(250,246,239,0.95)] px-3.5 pt-2.5 pb-[calc(10px+env(safe-area-inset-bottom,0))] shadow-[0_-8px_24px_-16px_rgba(31,26,20,0.2)] backdrop-blur-md backdrop-saturate-150 lg:flex-wrap lg:justify-between lg:gap-5 lg:rounded-full lg:border lg:border-(--ink-line) lg:bg-white lg:px-5.5 lg:py-4.5 lg:pb-4.5 lg:shadow-(--sh-1)">
                 <div
                   role="tablist"
@@ -335,7 +335,7 @@ export default function Homepage({ posts, featuredPost, initialCategory = "All" 
 
           {/* POSTS GRID */}
           <section className="pb-[110px] lg:pb-25">
-            <div className="mx-auto w-full max-w-[1350px] px-3 sm:px-4 md:px-5 lg:px-8">
+            <div className="mx-auto w-full max-w-page px-3 sm:px-4 md:px-5 lg:px-8">
               <div
                 ref={headRef}
                 className="reveal mb-6.5 flex flex-col items-start gap-2 [scroll-margin-top:90px] sm:flex-row sm:items-end sm:justify-between sm:gap-5 lg:mb-10.5 lg:[scroll-margin-top:170px]"
@@ -417,7 +417,7 @@ export default function Homepage({ posts, featuredPost, initialCategory = "All" 
         id="newsletter"
         className="relative my-6 mb-15 sm:my-8 sm:mb-15 lg:mb-[90px] lg:mt-10"
       >
-        <div className="mx-auto w-full max-w-[1350px] px-3 sm:px-4 md:px-5 lg:px-8">
+        <div className="mx-auto w-full max-w-page px-3 sm:px-4 md:px-5 lg:px-8">
           <div className="reveal relative grid grid-cols-1 items-center gap-6.5 overflow-hidden rounded-[var(--r-xl)] bg-(--c-dark-1) px-5 py-8 text-(--c-cream) sm:gap-7 sm:px-6.5 sm:py-10 lg:grid-cols-[1.1fr_1fr] lg:gap-12 lg:rounded-[var(--r-2xl)] lg:px-[clamp(36px,6vw,80px)] lg:py-[clamp(48px,7vw,88px)]">
             <div
               aria-hidden

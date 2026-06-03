@@ -9,7 +9,7 @@ import { schemaTypes } from "./sanity/schemas";
 
 export default defineConfig({
   name: "default",
-  title: "Know Your Genes — Journal",
+  title: "Know Your Genes - Journal",
   basePath: "/studio",
   projectId: projectId || "placeholder",
   dataset,

@@ -28,13 +28,13 @@ export default function SiteNav() {
   return (
     <nav
       id="nav"
-      className={`fixed inset-x-0 top-0 z-[100] transition-[background,padding,box-shadow] duration-300 ease-(--e-out) ${
+      className={`fixed inset-x-0 top-0 z-100 transition-[background,padding,box-shadow] duration-300 ease-(--e-out) ${
         scrolled
           ? "bg-(--c-cream) py-3 shadow-[0_1px_0_rgba(31,26,20,0.06),0_8px_24px_-20px_rgba(45,32,18,0.12)]"
           : "bg-transparent py-3.5 sm:py-4.5"
       }`}
     >
-      <div className="mx-auto flex w-full max-w-[1350px] items-center justify-between px-4 sm:px-4.5 md:px-8">
+      <div className="mx-auto flex w-full max-w-page items-center justify-between px-4 sm:px-4.5 md:px-8">
         <Link href="/" aria-label="knowyourgenes.ai" className="flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={LOGO_SRC} alt="KnowYourGenes" className="h-5.5 w-auto sm:h-6.5 md:h-7.5" />
