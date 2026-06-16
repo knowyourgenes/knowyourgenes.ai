@@ -497,6 +497,58 @@ The other one is movement, in the morning if possible. Daylight on the retina pl
 If you suspect you are the slow-recovery type, a wellness DNA panel that includes COMT and FKBP5 will tell you. It is one of the few cases where genetic information directly justifies a behavioural change you would not otherwise make. Knowing that your nervous system is running on a different clock than your colleagues' is sometimes the permission you need to design your week around it.
 `;
 
+const BODY_PROTEIN = `
+Walk into any Indian gym conversation and protein is the currency everyone trades in. Scoops, grams, shakes, targets, the latest imported powder. Yet for a country this fixated on the word, a striking number of people are quietly running a daily deficit, and the standard advice they are dutifully following was, in many cases, never written with their plates, their genes, or their kitchens in mind. Here is what the research actually supports, and where the popular targets quietly fall apart.
+
+## The deficit hiding in plain sight
+
+India's traditional diet is heavy on cereals and lighter on concentrated protein than many Western dietary patterns. Large national nutrition surveys have repeatedly flagged that a meaningful share of the population, including people who consider themselves perfectly well-fed, fall short of adequate protein. The shortfall is rarely dramatic and almost never obvious in the moment. It is a slow, daily under-supply that shows up decades later as lost muscle, weaker recovery from illness, slower healing, and a frailty that arrives earlier than it should.
+
+The problem is not that Indians do not eat enough food overall. It is that dal, rice, and roti, as satisfying and culturally central as they are, deliver protein at a lower density and a less complete amino acid profile than the gym-pamphlet target quietly assumes. The pamphlet was built on a different plate, in a different food culture, and copying its number without copying its food leaves a gap.
+
+## Where genetics quietly enters
+
+Protein is not only about how much you eat. It is also about how efficiently your body builds and preserves muscle from what you eat, and that varies between people. Variants in genes involved in muscle signalling and repair influence how readily you put on and hold muscle in response to the same training and the same meal. This is a well-documented reason that two people following an identical programme and an identical diet end up with visibly different results. One body converts the input efficiently and visibly. The other needs more stimulus, more protein, and more patience to reach the same place.
+
+This does not mean a gene decides your physique or that effort is pointless. It means the same protein target lands differently in different bodies, which is precisely why a single universal number was always going to undershoot for some of the people obediently following it. Your biology sets the exchange rate. Your habits decide how much you trade.
+
+## The number nobody agrees on, and why
+
+General health guidance often cites a modest baseline of protein per kilogram of body weight as enough to prevent deficiency. The catch hiding in that sentence is that "enough to prevent deficiency" and "enough to build and protect muscle as you age" are two completely different goals. A growing body of research suggests that for active people, and importantly for adults past their forties trying to defend their muscle mass, the protein needed to actually thrive sits well above the minimum needed to merely avoid getting sick. The official minimum was designed to stop deficiency diseases, not to keep you strong, mobile, and independent at seventy.
+
+This is the gap most people fall straight into. They hit the number that prevents a problem and assume it is the number that builds resilience. It usually is not, and the difference between those two numbers is where a lot of avoidable decline quietly lives.
+
+## The age nobody plans for
+
+After roughly the age of forty, the body becomes measurably less efficient at turning dietary protein into muscle, a shift researchers call anabolic resistance. In practical terms, an older body needs a larger, more concentrated dose of protein in a single meal to trigger the same muscle-building response that a younger body gets from much less. This is one of the most under-communicated facts in everyday nutrition, because it means the protein habits that served someone perfectly at twenty-five quietly stop being sufficient at forty-five, at the exact moment their need is rising rather than falling. Most people do the opposite of what their biology is asking and eat a little less protein as they age, not more.
+
+## What this means for your plate
+
+The honest, evidence-aligned takeaways are unglamorous, which is probably why the supplement industry rarely leads with them: Spread your protein across the day rather than loading it all into one big meal, because the body uses moderate doses at each meal more effectively than one large dump at dinner. Anchor each main meal around a concentrated protein source, whether that is dairy where you tolerate it, eggs, fish, chicken, soya, paneer, or well-combined dals and pulses for vegetarians. Pay closer attention as you cross forty, not less, since that is when the need rises and the efficiency drops. And recognise that a target that works beautifully for a friend may genuinely undershoot for you, because your muscle response is partly written into your biology and partly into your age.
+
+The wellness industry sells protein as a single number to chase and a powder to buy. The science treats it as a system to manage, spread across your meals, your training, your age, and the particular body you actually inherited. Manage the system, and the number takes care of itself.
+
+This article is educational and is not a substitute for individual medical or dietary advice.
+
+## Frequently asked
+
+### Is a high-protein diet safe for healthy people?
+
+For people with healthy kidneys, higher protein intakes are generally considered safe, but anyone with kidney concerns should get individual medical advice before increasing intake.
+
+### Can vegetarians get enough protein in India?
+
+Yes, with intention. Combining dals, pulses, dairy, soya, and paneer across the day can meet needs, though it takes more planning than a meat-based diet.
+
+### Does protein timing really matter?
+
+Spreading it across meals appears more effective than concentrating it once a day, especially for protecting muscle as you age.
+
+### Do I need protein powder?
+
+Not necessarily. Whole foods can meet most needs. Powder is a convenience for hitting a target, not a requirement, and it does not beat a well-built plate.
+`;
+
 // ---------- Posts ----------
 
 const POSTS = [
@@ -639,6 +691,20 @@ const POSTS = [
     authorRef: "author-tanya-r",
     daysAgo: 28,
     body: BODY_CARD_09,
+  },
+  {
+    _id: "post-protein-intake-built-for-your-body",
+    title: "Why your protein intake probably isn't built for your body",
+    slug: "protein-intake-not-built-for-your-body",
+    excerpt:
+      "India is fixated on protein and quietly running a deficit. Dal, rice, and roti deliver less than the gym-pamphlet target assumes, your genes change how efficiently you build muscle from it, and after forty the maths shifts again. Here is what the research actually supports.",
+    category: "Nutrition",
+    readTime: 9,
+    variant: 1,
+    featured: false,
+    authorRef: "author-editorial",
+    daysAgo: 0,
+    body: BODY_PROTEIN,
   },
 ];
 
