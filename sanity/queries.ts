@@ -33,3 +33,11 @@ export const RELATED_POSTS_QUERY = groq`*[_type == "post" && category == $catego
 }`;
 
 export const ALL_SLUGS_QUERY = groq`*[_type == "post" && defined(slug.current)][].slug.current`;
+
+// Every post with its full Portable Text body. Used by /llms.txt and
+// /llms-full.txt to inline content for AI-search readiness.
+export const ALL_POSTS_FULL_QUERY = groq`*[_type == "post" && defined(slug.current)] | order(publishedAt desc) {
+  ${POST_FIELDS},
+  body,
+  "author": author->{ name, initials, bio, "image": image.asset->url }
+}`;
