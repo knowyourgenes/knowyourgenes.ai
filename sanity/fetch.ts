@@ -1,6 +1,7 @@
 import { client } from "./client";
 import { isSanityConfigured } from "./env";
 import {
+  ALL_POSTS_FULL_QUERY,
   ALL_SLUGS_QUERY,
   FEATURED_POST_QUERY,
   POSTS_QUERY,
@@ -45,5 +46,10 @@ export async function getRelatedPosts(category: string, slug: string): Promise<P
 
 export async function getAllPostSlugs(): Promise<string[]> {
   const result = await safeFetch<string[]>(ALL_SLUGS_QUERY, {}, []);
+  return result ?? [];
+}
+
+export async function getAllPostsFull(): Promise<Post[]> {
+  const result = await safeFetch<Post[]>(ALL_POSTS_FULL_QUERY, {}, []);
   return result ?? [];
 }
